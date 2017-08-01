@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBHomeIncomeViewController">
+            <connections>
+                <outlet property="applyBt" destination="1km-RR-R39" id="LgG-Qy-29a"/>
+                <outlet property="chooseBt" destination="CsJ-v7-778" id="abc-0n-NA1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFh-mW-Aso">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otA-TP-VIM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收  益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKg-Os-Hna">
+                                    <rect key="frame" x="165" y="34" width="46" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="EfF-oK-ClK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-yg-xvw">
+                                    <rect key="frame" x="123" y="31" width="130" height="26"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="qjQ-36-Jbl"/>
+                                        <constraint firstAttribute="width" constant="130" id="zNR-QO-RBc"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="线上收益"/>
+                                        <segment title="线下收益"/>
+                                    </segments>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="segmentEvent:" destination="-1" eventType="valueChanged" id="eLM-Ux-qDc"/>
+                                    </connections>
+                                </segmentedControl>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsJ-v7-778">
+                                    <rect key="frame" x="319" y="31.5" width="46" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="PrF-AB-Xjd"/>
+                                        <constraint firstAttribute="width" constant="46" id="byb-cK-DL6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="筛选">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="收起">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="searchEvent:" destination="-1" eventType="touchUpInside" id="akZ-Ux-PGj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1km-RR-R39">
+                                    <rect key="frame" x="8" y="31.5" width="60" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="IBu-Hu-hpA"/>
+                                        <constraint firstAttribute="height" constant="25" id="rPB-Ab-Itb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="申请额度">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="收起">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="applyMoneny:" destination="-1" eventType="touchUpInside" id="Zr4-Yg-NqM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1551630795" green="0.58942979569999998" blue="0.2282119095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Gx1-yg-xvw" firstAttribute="centerX" secondItem="otA-TP-VIM" secondAttribute="centerX" id="1Jx-kv-aN5"/>
+                                <constraint firstItem="CsJ-v7-778" firstAttribute="centerY" secondItem="Gx1-yg-xvw" secondAttribute="centerY" id="3Aa-1m-fmU"/>
+                                <constraint firstItem="pKg-Os-Hna" firstAttribute="centerX" secondItem="otA-TP-VIM" secondAttribute="centerX" id="575-z9-rTM"/>
+                                <constraint firstAttribute="bottom" secondItem="Gx1-yg-xvw" secondAttribute="bottom" constant="8" id="F5v-gb-gaB"/>
+                                <constraint firstAttribute="trailing" secondItem="CsJ-v7-778" secondAttribute="trailing" constant="10" id="TzX-o5-RBm"/>
+                                <constraint firstItem="CsJ-v7-778" firstAttribute="centerY" secondItem="1km-RR-R39" secondAttribute="centerY" id="UFc-Qs-y2P"/>
+                                <constraint firstItem="1km-RR-R39" firstAttribute="leading" secondItem="otA-TP-VIM" secondAttribute="leading" constant="8" id="lqg-N2-gxJ"/>
+                                <constraint firstAttribute="bottom" secondItem="pKg-Os-Hna" secondAttribute="bottom" constant="10" id="rmf-AZ-vK8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="b42-9N-lDp"/>
+                        <constraint firstItem="otA-TP-VIM" firstAttribute="leading" secondItem="nFh-mW-Aso" secondAttribute="leading" id="i0W-tv-MNI"/>
+                        <constraint firstItem="otA-TP-VIM" firstAttribute="top" secondItem="nFh-mW-Aso" secondAttribute="top" id="mqE-g8-Fct"/>
+                        <constraint firstAttribute="bottom" secondItem="otA-TP-VIM" secondAttribute="bottom" id="wGI-lz-gUS"/>
+                        <constraint firstAttribute="trailing" secondItem="otA-TP-VIM" secondAttribute="trailing" id="x70-o4-gLS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nFh-mW-Aso" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1jl-zP-av4"/>
+                <constraint firstAttribute="trailing" secondItem="nFh-mW-Aso" secondAttribute="trailing" id="II5-vS-bff"/>
+                <constraint firstItem="nFh-mW-Aso" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tOw-Zz-ygE"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
